@@ -1,0 +1,247 @@
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: burlywood;
+    color: white;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    flex: 1;
+}
+
+.links {
+    list-style-type: none;
+    display: flex;
+    gap: 10px; 
+    margin: 0;
+    padding: 15px 20px; 
+    font-size: 15px; 
+}
+
+.links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+.links li a:hover {
+    background-color: darkorange;
+    border-radius: 1%;
+}
+
+footer {
+    background-color: #544011;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    padding: 20px;
+}
+
+.welcome {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.welcome-text, .applyPara {
+    background-color: burlywood;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.welcome-img {
+    flex: 1;
+    background-color: burlywood;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.welcome-text h2 {
+    background-color: #544011;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.apply {
+    margin-top: 20px;
+}
+
+.applyPara {
+    padding: 20px;
+    background-color: burlywood;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.appImg {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button.final-submit {
+    background-color: darkorange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button.final-submit:hover {
+    background-color: orangered;
+}
+
+h2 {
+    background-color: #544011;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imgBox {
+    float: left;
+    margin-left: 10px;
+    margin: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+.box {
+    background-color: burlywood;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#course-list{
+    background-color: burlywood;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boxInc {
+    background-color: burlywood;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* Adjustments for mobile */
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+    }
+
+    .welcome-text, .welcome-img {
+        flex: none;
+        width: 100%;
+    }
+
+    .welcome-img img {
+        max-height: 200px;
+    }
+
+    .appImg {
+        max-width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .links li a {
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .box, .boxInc {
+        font-size: 18px;
+    }
+}
