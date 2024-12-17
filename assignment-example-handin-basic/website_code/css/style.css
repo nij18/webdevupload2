@@ -200,8 +200,6 @@ h2 {
 }
 
 
-
-/* Adjustments for mobile */
 @media (max-width: 768px) {
     .welcome {
         flex-direction: column;
